@@ -1,0 +1,7 @@
+dash==2.1.0
+plotly==5.11.0
+dash_bootstrap_components==1.0.3
+pandas
+gunicorn==20.1.0
+werkzeug==2.0.3
+flask==2.1.3
