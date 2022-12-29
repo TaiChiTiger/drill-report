@@ -428,15 +428,9 @@ fig = plot_report(df, new_df, design_xs, design_ys, design_zs, dir_name)
 
 # 建立仪表盘
 app = Dash(__name__, external_stylesheets=[dbc.themes.DARKLY], update_title='更新中...', title='钻孔报告')
-<!╌app._favicon = ("./img/drill.png")╌>
 server = app.server
 
 app.layout = dbc.Container([
-     <!╌dbc.Row([dbc.Col([
-        html.Button("下载", id="btn_report"),
-        dcc.Download(id="download-report"),
-        ], width={"size": 1, "offset": 11})
-    ]),╌>
     dbc.Row([
         dbc.Col(dcc.Graph("report-graph", figure=fig, config={"displayModeBar": False}), 
                 width={"size": 10, "offset": 1})
