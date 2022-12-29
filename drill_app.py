@@ -428,7 +428,7 @@ fig = plot_report(df, new_df, design_xs, design_ys, design_zs, dir_name)
 
 # 建立仪表盘
 app = Dash(__name__, external_stylesheets=[dbc.themes.DARKLY], update_title='更新中...', title='钻孔报告')
-app._favicon = ("drill.png")
+app._favicon = ("./img/drill.png")
 server = app.server
 
 app.layout = dbc.Container([
