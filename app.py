@@ -465,4 +465,4 @@ def init_callbacks(app):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True, port=8518)
+    app.run_server(debug=False)
